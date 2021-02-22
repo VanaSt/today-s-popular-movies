@@ -8,7 +8,7 @@ Website based on TMDB API that shows today's popular movies </br>
 Clone of Download => Copy url => Open terminal:</br>
 git clone url </br>
 npm i -yarn (installs dependencies)</br>
-npm start (runs the javascript application)</br></br>
+npm start (runs the javascript application)</br>
 
 <h2>Live Demo:</h2>
 http://vanastergiou.com/ProjectAPI/
