@@ -11,4 +11,4 @@ npm i -yarn (installs dependencies)</br>
 npm start (runs the javascript application)</br>
 
 <h2>Live Demo:</h2>
-<a href:"http://vanastergiou.com/ProjectAPI/" target="_blank">Demo</a>
+http://vanastergiou.com/ProjectAPI/
