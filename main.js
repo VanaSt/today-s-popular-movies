@@ -34,7 +34,10 @@ function fetchData() {
             
             var filtered = data.results.filter(i => i.id == _posterid)[0];
 
+            $("#title h2").html(filtered.title);
             $("#description p").html(filtered.overview);
+            $("#release").html("Release Day: " + filtered.release_date);
+            $("#votes").html("Votes: " + filtered.vote_average);
             $("#poster img").attr("src", "https://image.tmdb.org/t/p/w500/" + filtered.poster_path).attr("alt", filtered.title);
             
         });
