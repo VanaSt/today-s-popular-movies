@@ -11,8 +11,8 @@ function fetchData() {
         const html = data.results
         .map(movie => {
             return `
-            <div class = "movie">
-                <p data-id="${movie.id}">${movie.title}</p>
+            <div class = "movie" data-id="${movie.id}">
+                <p>${movie.title}</p>
             </div>
             `;
         })
@@ -23,14 +23,15 @@ function fetchData() {
         .insertAdjacentHTML("afterbegin", html);
 
         
-        $(".movie p ").on("click",function() {
+        $(".movie").on("click",function() {
 
             $(".movie").removeClass("active");
 
             var _this=$(this);
             var _posterid=_this.data("id");
 
-            _this.closest(".movie").addClass("active");
+            //_this.closest(".movie").addClass("active");
+            _this.addClass("active"); // Add active class to the clicked div
             
             var filtered = data.results.filter(i => i.id == _posterid)[0];
 
@@ -51,5 +52,7 @@ function fetchData() {
 }
 
 fetchData();
+
+
 
 
